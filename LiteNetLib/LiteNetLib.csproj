@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{54E19C75-5AC3-42B0-994B-958862C9AF61}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>LiteNetLib</RootNamespace>
+    <AssemblyName>LiteNetLib</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="LiteNetLib.asmdef" />
+    <None Include="package.json" />
+    <None Include="Properties\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseChannel.cs" />
+    <Compile Include="ConnectionRequest.cs" />
+    <Compile Include="INetEventListener.cs" />
+    <Compile Include="InternalPackets.cs" />
+    <Compile Include="Layers\Crc32cLayer.cs" />
+    <Compile Include="Layers\PacketLayerBase.cs" />
+    <Compile Include="Layers\XorEncryptLayer.cs" />
+    <Compile Include="NativeSocket.cs" />
+    <Compile Include="NatPunchModule.cs" />
+    <Compile Include="NetConstants.cs" />
+    <Compile Include="NetDebug.cs" />
+    <Compile Include="NetManager.cs" />
+    <Compile Include="NetManager.HashSet.cs" />
+    <Compile Include="NetManager.PacketPool.cs" />
+    <Compile Include="NetManager.Socket.cs" />
+    <Compile Include="NetPacket.cs" />
+    <Compile Include="NetPeer.cs" />
+    <Compile Include="NetStatistics.cs" />
+    <Compile Include="NetUtils.cs" />
+    <Compile Include="PausedSocketFix.cs" />
+    <Compile Include="PooledPacket.cs" />
+    <Compile Include="ReliableChannel.cs" />
+    <Compile Include="SequencedChannel.cs" />
+    <Compile Include="Trimming.cs" />
+    <Compile Include="Utils\CRC32C.cs" />
+    <Compile Include="Utils\FastBitConverter.cs" />
+    <Compile Include="Utils\INetSerializable.cs" />
+    <Compile Include="Utils\NetDataReader.cs" />
+    <Compile Include="Utils\NetDataWriter.cs" />
+    <Compile Include="Utils\NetPacketProcessor.cs" />
+    <Compile Include="Utils\NetSerializer.cs" />
+    <Compile Include="Utils\NtpPacket.cs" />
+    <Compile Include="Utils\NtpRequest.cs" />
+    <Compile Include="Utils\Preserve.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Serialization" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

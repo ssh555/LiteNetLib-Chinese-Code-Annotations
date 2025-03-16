@@ -1,0 +1,7 @@
+D:\Projects\Unknown\LiteNetLib\LiteNetLib\LiteNetLib\obj\Debug\LiteNetLib.csproj.CoreCompileInputs.cache
+D:\Projects\Unknown\LiteNetLib\LiteNetLib\LiteNetLib\bin\Debug\LiteNetLib.dll.config
+D:\Projects\Unknown\LiteNetLib\LiteNetLib\LiteNetLib\bin\Debug\LiteNetLib.dll
+D:\Projects\Unknown\LiteNetLib\LiteNetLib\LiteNetLib\bin\Debug\LiteNetLib.pdb
+D:\Projects\Unknown\LiteNetLib\LiteNetLib\LiteNetLib\obj\Debug\LiteNetLib.csproj.AssemblyReference.cache
+D:\Projects\Unknown\LiteNetLib\LiteNetLib\LiteNetLib\obj\Debug\LiteNetLib.dll
+D:\Projects\Unknown\LiteNetLib\LiteNetLib\LiteNetLib\obj\Debug\LiteNetLib.pdb
